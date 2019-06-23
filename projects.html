@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EBi Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Courgette&display=swap" rel="stylesheet">
+</head>
+
+<style>
+	*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+		
+		/*mobile size*/
+		.empty{
+			height:60px;
+		}
+
+		.navbar {
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			box-shadow: 0px 1px 15px 0px rgb(130,130,130, 0.5);
+			background-color: white;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 13px;
+			position: relative;
+		}
+
+		.navbar .logo img{
+			height: 38px;
+			vertical-align: middle;
+			margin-top: 5px;
+		}
+
+		.navbar .logo{
+			line-height: 50px;
+			text-decoration: none;
+			color: rgb(85,85,85);
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			letter-spacing: 1.6px;
+		}
+
+		.navbar .menu{
+			visibility: hidden;			
+		}
+		
+		.projects h3{
+	 		 font-size:24px;
+ 			 color:#545454;
+ 		 margin-top:70px;
+ 		 margin-bottom:70px;
+  		text-align:center;
+		}
+
+		.project-list{
+		  width:1110px;/*가로길이 (제품너비225+제품간격20)*3의 값*/
+		  margin-left:auto;
+		  margin-right:auto;
+		}
+
+	/*	.project .hove:hover{
+			background-image: url(images/card-01-2-07.jpg);
+			width: 360px;
+			height: 300px;
+			position: absolute;
+		}*/
+
+		.project {
+		  text-align:center;
+		  width:360px;
+		  height: 300px;
+		  display:block;/*a태그의 위치를 제대로 잡아주기 위한 속성*/
+		  color:#545454;
+		  text-decoration:none;
+		  float:left;
+		  margin-left:5px;
+		  margin-right:5px;
+		  margin-bottom: 40px;
+		}
+		
+
+		.project-name{
+		  margin-top:20px;
+		  margin-bottom:4px;
+		}
+
+		.clearfix{
+		  clear:both;/*빈태그를 만들어 float를 해제*/
+		}
+
+
+
+/*desktop size*/
+
+		@media (min-width: 992px){
+			.navbar{
+				position: fixed;
+				width: 100%;
+			}
+			.navbar .menu{
+
+				visibility: visible;
+				float: right;
+				list-style: none;
+				line-height: 60px;
+			}
+
+			.navbar .menu a{
+				text-decoration: none;
+				color: black;
+			}
+
+			.navbar .menu .menu-item{
+				float: left;
+				margin-left: 30px;
+			}
+
+			.navbar .menu .menu-item1{
+				float: left;
+				margin-left: 30px;
+				border-bottom: 3px solid rgb(0,113,183);
+				color: gray;
+			}
+
+			.navbar .menu .menu-item:hover{
+				border-bottom: 3px solid rgb(0,113,183);
+				color: gray;
+			}
+
+
+						
+</style>
+
+<body>
+	<div class="navbar">
+		<a class="logo" href="https://bluebottlecoffee.com/"><img src="images/ebii.jpg" alt="" ><!-- <span>BLUE BOTTLE COFFEE</span> --></a>
+
+		<ul class="menu">
+			<a href="home.html"><li class="menu-item">HOME</li></a>
+			<a href="about.html"><li class="menu-item">ABOUT</li></a>
+			<a href="projects.html"><li class="menu-item1">PROJECTS</li></a>
+			<a href=""><li class="menu-item">RESUME</li></a>
+			<a href=""><li class="menu-item">CONTACT</li></a>
+		</ul>
+	</div>	
+
+	<div class="empty"></div>
+
+	    <div class="projects">
+        <h3>My Work Projects</h3>
+      <div class="project-list">
+        <a href="#" class="project">
+          <img class="hove" src="images/card-01.jpg" width="350" height="300">
+          
+        </a>
+      
+      <a href="#" class="project">
+          <img src="images/card-02.jpg" width="350" height="300">
+        
+        </a>
+      
+       <a href="#" class="project">
+          <img src="images/card3-03.jpg" width="350" height="300">
+        </a>
+
+         <a href="#" class="project">
+          <img src="images/card-04.jpg" width="350" height="300">
+         
+        </a>
+
+         <a href="#" class="project">
+          <img src="images/card-05.jpg" width="350" height="300">
+          
+        </a>
+
+         <a href="#" class="project">
+          <img src="images/card-06.jpg" width="350" height="300">
+        
+        </a>
+   
+        <div class="clearfix"></div>
+      </div>
+
+</body>
+</html>
